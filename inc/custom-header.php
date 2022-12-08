@@ -39,7 +39,8 @@ if ( ! function_exists( 'qasaba_header_style' ) ) :
 	 * Styles the header image and text displayed on the blog.
 	 *
 	 * @see qasaba_custom_header_setup().
-	 */
+	 **/
+
 	function qasaba_header_style() {
 		$header_text_color = get_header_textcolor();
 

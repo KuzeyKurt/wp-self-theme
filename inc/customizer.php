@@ -14,8 +14,8 @@ function qasaba_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
-	// попытка сделать кастомный хедер 
-	$wp_customize->get_setting( 'header_color')->transport = 'postMessage';
+	// попытка сделать кастомнизируемый хедер 
+	// $wp_customize->get_setting( 'header_color')->transport = 'postMessage';
 
 	if ( isset( $wp_customize->selective_refresh ) ) {
 		$wp_customize->selective_refresh->add_partial(
@@ -33,14 +33,10 @@ function qasaba_customize_register( $wp_customize ) {
 			)
 		);
 
-		$wp_customize->selective_refresh->add_partial(
-			'headercolor',
-			array(
-				'selecor' => '.'
-			)
-		)
+		
 	}
-// добавление контроля цветов
+// добавление контроля цветов 
+/*
 	$wp_customize -> add_setting('qasaba_link_color', array(
 		'default' => 'ffffff',
 		'transport' => 'refresh',
@@ -55,7 +51,7 @@ function qasaba_customize_register( $wp_customize ) {
 		'label' => __('Link Color', 'qasaba'),
 		'section' => 'qasaba_link_color',
 		'settings' =>  'lwp_link_color'
-	)));
+	))); */
 }
 add_action( 'customize_register', 'qasaba_customize_register' );
 

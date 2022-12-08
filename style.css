@@ -100,6 +100,11 @@ footer
 	position: relative;
 	bottom: 0px;
 }
+.footerred
+{
+	background-color: yellow;
+	border-radius: 15px;
+}
 
 .site-footer
 {
@@ -107,6 +112,24 @@ footer
 	color: white;
 	position: relative;
 }
+
+
+/*
+.footerred
+{
+	background-color: red;
+}
+
+.footertextyellow
+{
+	color: yellow;
+}
+.footerblue
+{
+	background-color: blue;
+}
+*/ 
+
 
 .footer-navigation a
 {
@@ -125,6 +148,7 @@ footer
 {
 	list-style: none;
 }
+
 
 
 
@@ -1024,7 +1048,7 @@ textarea {
 
 nav
 {
-	background-color: #5675b1;
+	background-color: #5675b1; 
 	color: #FFFFFF;
 	font-size: 1.2em;
 	height: 2.2em;
@@ -1050,11 +1074,17 @@ header
 	margin-right: 10%;
 }
 
-/* .primary-menu
+ .primary-menu
 {
 	margin-right: 5%;
 	margin-left: 5%;
-} */
+
+} 
+
+.second-primary-menu
+{
+	background-color: red;
+}
 
 /* Sidebar styles */
 

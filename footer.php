@@ -17,12 +17,14 @@
 		</div><!-- .site-info -->
 
 <div>
-	<nav class="footer-navigation">
+
+	<nav class="footer-navigation"> 	
 <button class="menu-toggle" aria-controls="footer-menu" aria-expanded="false"><?php esc_html_e( 'Footer Menu', 'qasaba' ); ?></button>
 	<?php wp_nav_menu( 
 		array(
 			'theme_location' => 'footer-menu',
 			'menu_id'        => 'footer-menu',
+			'container_class' => 'footerred',
 		)
 	) ?>
 	</nav>
@@ -36,6 +38,10 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+
+<menu>
+	
+</menu>
 
 </body>
 </html>
